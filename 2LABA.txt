@@ -1,0 +1,6 @@
+(Defun rek(lst)(+ car(lst)(caddr(lst))))
+
+(Defun rek(lst)( (caddr(lst) ) ) )
+
+(SETQ LST '(2 4 3 1 7 2 4))
+в зошитi
