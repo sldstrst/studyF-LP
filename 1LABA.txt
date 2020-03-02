@@ -1,0 +1,18 @@
+7. Дан список ( A ((B) (C) ) (D) (K) L) получить
+ 7.1 элемент A
+ 7.2 элемент D
+ 7.3 список (D)
+ 7.4 список (A B C)
+ 7.5 список ( A (D) (C))
+ 7.6 список (D A B)
+
+
+
+(SETQ LST '( A ((B) (C) ) (D) (K) L) )
+
+WORK1: (CAR LST)
+WORK2: (CAADDR LST)
+WORK3: (CADDR LST)
+WORK4: (CONS (CAR LST) (CONS (CAAADR LST) (CADADR LST)))
+WORK5: (CONS (CAR LST) (CONS (CADDR LST) (CDADR LST)))
+WORK6: (CONS (CAADDR LST) (CONS (CAR LST) (CAADR LST)))
